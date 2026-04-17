@@ -5,12 +5,10 @@ const bck_btn = document.getElementById("bck_btn");
 const cover = document.getElementById("cover");
 const cover1 = document.getElementById("cover1");
 
-var a = 1;
-if (a == 1) {
+document.body.addEventListener("click", function () {
     const audio = document.getElementById("bg-music");
     audio.play();
-    a = 0;
-}
+});
 
 bck_btn.addEventListener("click", () => {
     bck_btn.style.display = "none";
